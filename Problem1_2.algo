@@ -1,0 +1,8 @@
+ALGORITHM Problem1_2
+VAR
+  htab: HASH_TABLE<INTEGER,INTEGER>
+  Tab1 : ARRAY_OF INTEGER[];
+  Tab2 : ARRAY_OF INTEGER[];
+BEGIN
+  set_instructions
+END

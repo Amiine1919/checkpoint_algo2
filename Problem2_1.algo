@@ -1,0 +1,31 @@
+ALGORITHM Problem2_1
+VAR
+  sum, i, j, k, l:INTEGER :=0;
+  Tab1 : ARRAY_OF INTEGER[];
+  Tab2 : ARRAY_OF INTEGER[];
+  Tab3 : ARRAY_OF INTEGER[];
+
+
+BEGIN
+  FOR i FROM 0 TO Tab1.lenght-1 DO
+    FOR j FROM 0 TO Tab2.lenght-1 DO
+      IF (Tab1[i]!=Tab2[j]) THEN
+        j++;      
+      ELSE
+        Tab3[]=Tab1[i]
+        FOR k FROM i TO max Tab1.lenght-2 DO
+          Tab1[k]=Tab1[k+1];
+        END_FOR
+        FOR l FROM j TO max Tab2.lenght-2 DO
+          Tab2[l]=Tab2[l+1];
+        END_FOR   
+      END_IF   
+    END_FOR
+    i++;
+  END_FOR  
+  FOR i FROM 0 TO Tab1.lenght DO
+    sum:=sum+Tab1[i]+Tab2[i];
+  END_FOR
+  write ('The ouput is:',sum);
+  write ('The common elements are:', Tab3);
+END

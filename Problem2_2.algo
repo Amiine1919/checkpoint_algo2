@@ -1,0 +1,6 @@
+ALGORITHM Problem2_2
+VAR
+  set_declarations
+BEGIN
+  set_instructions
+END
